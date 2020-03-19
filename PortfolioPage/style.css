@@ -1,0 +1,181 @@
+/*  Defaults */
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Nav Bar */
+
+#navBar {
+  display: flex;
+  background-color: #990000;
+  width: 100%;
+  justify-content: flex-end;
+  color: white;
+  top: 0;
+  left: 0;
+  /*   width = 100%; */
+  position: fixed;
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 1.5rem;
+}
+
+.nav-list a:hover{
+  
+  background-color: #00334d;
+  height: 100%;
+  top: 0;
+  margin-bottom: 0px;
+  
+}
+
+/* Welcome - Section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f14;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  margin: 0 0 0 auto;
+}
+.welcome-section > h1{
+  
+  color: white;
+  
+}
+.welcome-section > p{
+  
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #990000;
+}
+
+/* Projects Section */
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #476b6b;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid white;
+}
+.projects-section > h2 {
+  
+  color: white;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+}
+
+.projects-section > div {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 128x;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+#project-tile {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.coe {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project-title:hover .coe {
+  color: #ff7f50;
+}
+
+.projects-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.projects-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  
+}
