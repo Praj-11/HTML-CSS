@@ -1,0 +1,4 @@
+[submodule "HTML-CSS"]
+	path = HTML-CSS
+	url = https://github.com/Praj-11/HTML-CSS.git
+	branch = master
